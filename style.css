@@ -1,0 +1,158 @@
+:root {
+  --blue: #0b3c5d;
+  --green: #2fa36b;
+  --light-bg: #f4f8fb;
+  --text-dark: #1f2933;
+  --text-light: #6b7280;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 8%;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: var(--green);
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(to right, #0b3c5d, #145a82);
+  color: #fff;
+  padding: 80px 8%;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin-bottom: 24px;
+  color: #e5e7eb;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.btn {
+  background: var(--green);
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-outline {
+  background: #fff;
+  color: var(--blue);
+}
+
+/* Sections */
+.section {
+  padding: 70px 8%;
+}
+
+.section-light {
+  background: var(--light-bg);
+}
+
+.section h2 {
+  color: var(--blue);
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  border: 1px solid #e5e7eb;
+  padding: 24px;
+  border-radius: 10px;
+  background: #fff;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: var(--blue);
+}
+
+/* Contact */
+.contact {
+  background: var(--blue);
+  color: #fff;
+  text-align: center;
+  padding: 70px 8%;
+}
+
+.contact p {
+  color: #e5e7eb;
+  margin-bottom: 16px;
+}
+
+/* Footer */
+.footer {
+  background: #0a2f4a;
+  color: #cbd5e1;
+  text-align: center;
+  padding: 14px;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
